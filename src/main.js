@@ -6,6 +6,7 @@ import "firebase/analytics";
 // Add the Firebase products that you want to use
 import "firebase/auth";
 import "firebase/firestore";
+import router from './router'
 
 //Your web app's Firebase configuration
 var firebaseConfig = {
@@ -25,5 +26,6 @@ firebase.analytics();
 Vue.config.productionTip = false
 
 new Vue({
-    render: h => h(App),
+    router,
+    render: h => h(App)
 }).$mount('#app')
