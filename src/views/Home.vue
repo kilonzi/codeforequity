@@ -10,7 +10,7 @@
           <p>We take 2 - 15% of equity in your startup</p>
           <hr class="my-4" />
           <p>We deliver fast and continously, allowing you to iterate over your idea and pivot whenever possible</p>
-          <a @click="getstarted" class="btn btn-primary btn-lg" href="#" role="button">Get Started</a>
+          <a @click="getstarted" id="get_started" class="btn btn-primary btn-lg" href="#" role="button">Get Started</a>
         </div>
       </div>
       <div class="col-12 col-lg-5">
@@ -68,6 +68,10 @@ export default {
     getstarted() {
      window.location.replace('https://forms.gle/2bwGZRCkBR7HJ4t48')
     }
+  },
+  mounted(){
+    document.getElementById('get_started').addEventListener('click', function() {
+}, false);
   }
 };
 </script>
