@@ -1,6 +1,6 @@
 <template>
   <div class="container mx-auto">
-    <img src="../assets/img/code4equity.png" alt="Code for Equity header image">
+    <img src="../assets/img/code4equity.png" alt="Code for Equity header image" height="500px">
   </div>
 </template>
 

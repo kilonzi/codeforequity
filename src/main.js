@@ -6,7 +6,14 @@ import "firebase/analytics";
 // Add the Firebase products that you want to use
 import "firebase/auth";
 import "firebase/firestore";
+import 'bootstrap';
 import router from './router'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import BootstrapVue from 'bootstrap-vue'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
+
+Vue.use(BootstrapVue)
+Vue.use(router)
 
 //Your web app's Firebase configuration
 var firebaseConfig = {
